@@ -1,4 +1,7 @@
+#![recursion_limit = "256"]
 mod app;
+mod components;
+mod route;
 
 use wasm_bindgen::prelude::*;
 use yew::prelude::*;
