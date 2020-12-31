@@ -1,0 +1,16 @@
+[package]
+name = "my-githubio"
+version = "0.1.0"
+authors = ["Du, Y <tottexi97131@gmail.com>"]
+edition = "2018"
+description = "My homepage"
+repository = "https://github.com/mori97/mori97.github.io"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+yew = "0.17"
+yew-router = "0.14"
+wasm-bindgen = "0.2"
