@@ -1,0 +1,21 @@
+language: rust
+sudo: false
+jobs:
+  include:
+    - name: "deploy"
+      rust: stable
+      before_script:
+        - curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh -s -- -f
+      script:
+        - wasm-pack build --target web --out-name wasm --out-dir ./static
+        - rm static/README.md static/.gitignore
+      deploy:
+        provider: pages
+        local_dir: static
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        target_branch: gh-pages
+        keep_history: false
+        verbose: true
+        on:
+          branch: main
