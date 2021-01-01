@@ -1,4 +1,4 @@
-use crate::components::{Navbar, Publications};
+use crate::components::{CV, Navbar, Publications};
 use crate::route::AppRoute;
 use yew::prelude::*;
 use yew_router::prelude::*;
@@ -23,6 +23,9 @@ impl Component for App {
 
     fn view(&self) -> Html {
         let render = Router::render(move |switch: AppRoute| match switch {
+            AppRoute::CV => html! {
+                <CV />
+            },
             AppRoute::Publications => html! {
                 <Publications />
             },
