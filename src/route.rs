@@ -2,11 +2,11 @@ use yew_router::prelude::*;
 
 #[derive(Switch, Clone, Debug)]
 pub enum AppRoute {
-    #[to = "/cv"]
+    #[to = "/#/cv"]
     CV,
-    #[to = "/skills"]
+    #[to = "/#/skills"]
     Skills,
-    #[to = "/publications"]
+    #[to = "/#/publications"]
     Publications,
     #[to = "/"]
     Home,
