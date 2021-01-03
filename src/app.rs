@@ -1,4 +1,4 @@
-use crate::components::{CV, Navbar, Publications, Skills};
+use crate::components::{Home, Navbar, Publications, Skills, CV};
 use crate::route::AppRoute;
 use yew::prelude::*;
 use yew_router::prelude::*;
@@ -32,8 +32,8 @@ impl Component for App {
             AppRoute::Skills => html! {
                 <Skills />
             },
-            _ => html! {
-                <div>{"Under construction"}</div>
+            AppRoute::Home => html! {
+                <Home />
             },
         });
         html! {
