@@ -63,3 +63,12 @@
 .navbar_item a:hover {
   background-color: #111;
 }
+
+.content a {
+  color: #31aae2;
+  transition: color 0.2s;
+}
+
+.content a:hover {
+  color: #ff7043;
+}
