@@ -1,4 +1,4 @@
-use crate::components::{Home, Navbar, Publications, Skills, CV};
+use crate::components::{Home, Navbar, Publications, BioSideBlock, Skills, CV};
 use crate::route::AppRoute;
 use yew::prelude::*;
 use yew_router::prelude::*;
@@ -39,7 +39,14 @@ impl Component for App {
         html! {
             <>
               <Navbar />
-              <Router<AppRoute, ()> render=render />
+              <div class="main">
+                <div class="side-block">
+                  <BioSideBlock />
+                </div>
+                <div class="content">
+                  <Router<AppRoute, ()> render=render />
+                </div>
+              </div>
             </>
         }
     }
