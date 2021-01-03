@@ -29,16 +29,20 @@ impl Component for BioSideBlock {
                 <h3>{"Du Yicheng"}</h3>
                 <p>{"Master student"}<br/>{"ML engineer"}</p>
                 <div>
-                  <a href="https://www.kyoto-u.ac.jp/ja">{"Kyoto Univ."}</a>
+                  <i class="fas fa-university"></i>
+                  <a href="https://www.kyoto-u.ac.jp/ja">{" Kyoto Univ."}</a>
                 </div>
                 <div>
-                  <a href="https://biome.co.jp/">{"BIOME Inc."}</a>
+                  <i class="fas fa-briefcase"></i>
+                  <a href="https://biome.co.jp/">{" BIOME Inc."}</a>
                 </div>
                 <div>
-                  {"Kyoto, Japan"}
+                  <i class="fas fa-location-arrow"></i>
+                  {" Kyoto, Japan"}
                 </div>
                 <div>
-                  <a href="mailto:tottexi97131@gmail.com">{"Email"}</a>
+                  <i class="far fa-envelope"></i>
+                  <a href="mailto:tottexi97131@gmail.com">{" Email"}</a>
                 </div>
               </div>
             </>

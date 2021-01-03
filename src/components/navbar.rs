@@ -25,7 +25,12 @@ impl Component for Navbar {
         type Anchor = RouterAnchor<AppRoute>;
         html! {
             <ul class="navbar">
-              <li class="navbar_title">{"Du Yicheng's HP"}</li>
+              <li class="navbar_title">
+                {" Du Yicheng's HP "}
+                <a class="github-icon" href="https://github.com/mori97/mori97.github.io">
+                  <i class="fab fa-github-square fa-lg"></i>
+                </a>
+              </li>
               <li class="navbar_item"><Anchor route=AppRoute::Home>{"Home"}</Anchor></li>
               <li class="navbar_item"><Anchor route=AppRoute::CV>{"CV"}</Anchor></li>
               <li class="navbar_item"><Anchor route=AppRoute::Skills>{"Skills"}</Anchor></li>
