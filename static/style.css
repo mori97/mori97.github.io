@@ -73,10 +73,21 @@
   color: #ff7043;
 }
 
+.collapsible_title {
+  clear: both;
+}
 .collapsible_content {
   margin-left: 18px;
 }
 
 .content_cv {
   margin-left: 5px;
+}
+
+.biome_imgrec {
+  text-align: center;
+}
+
+.biome_imgrec img {
+  max-width: 270px;
 }
