@@ -72,3 +72,14 @@
 .content a:hover {
   color: #ff7043;
 }
+
+.collapsible_icon {
+  font-size: 22px;
+  font-weight: bold;
+  min-width: 19px;
+}
+
+.collapsible_content {
+  margin-left: 19px;
+}
+
