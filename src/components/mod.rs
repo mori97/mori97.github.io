@@ -1,5 +1,6 @@
 mod collapsible_content;
 mod cv;
+mod demo;
 mod home;
 mod navbar;
 mod publications;
@@ -8,6 +9,7 @@ mod skills;
 
 pub use collapsible_content::CollapsibleContent;
 pub use cv::CV;
+pub use demo::Demo;
 pub use home::Home;
 pub use navbar::Navbar;
 pub use publications::Publications;

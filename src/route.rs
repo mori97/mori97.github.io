@@ -4,6 +4,8 @@ use yew_router::prelude::*;
 pub enum AppRoute {
     #[to = "/#/cv"]
     CV,
+    #[to = "/#/demo/{id}"]
+    Demo(usize),
     #[to = "/#/skills"]
     Skills,
     #[to = "/#/publications"]

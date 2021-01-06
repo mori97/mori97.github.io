@@ -1,4 +1,4 @@
-use crate::components::{Home, Navbar, Publications, BioSideBlock, Skills, CV};
+use crate::components::{Demo, Home, Navbar, Publications, BioSideBlock, Skills, CV};
 use crate::route::AppRoute;
 use yew::prelude::*;
 use yew_router::prelude::*;
@@ -25,6 +25,9 @@ impl Component for App {
         let render = Router::render(move |switch: AppRoute| match switch {
             AppRoute::CV => html! {
                 <CV />
+            },
+            AppRoute::Demo(demo_id) => html! {
+                <Demo demo_id=demo_id />
             },
             AppRoute::Publications => html! {
                 <Publications />

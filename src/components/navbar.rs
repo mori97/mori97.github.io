@@ -35,6 +35,12 @@ impl Component for Navbar {
               <li class="navbar_item"><Anchor route=AppRoute::CV>{"CV"}</Anchor></li>
               <li class="navbar_item"><Anchor route=AppRoute::Skills>{"Skills"}</Anchor></li>
               <li class="navbar_item"><Anchor route=AppRoute::Publications>{"Publications"}</Anchor></li>
+              <li class="navbar_item dropdown">
+                <a class="dropbtn">{"Demos"}</a>
+                <div class="dropdown-content">
+                  <a><Anchor route=AppRoute::Demo(1)>{"U-Netで音楽パート分離"}</Anchor></a>
+                </div>
+              </li>
               <li class="navbar_item"><a href="https://github.com/mori97">{"GitHub"}</a></li>
             </ul>
         }
