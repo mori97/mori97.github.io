@@ -25,7 +25,7 @@ impl Component for Publications {
               <h2>{"国際学会"}</h2>
               <ul>
                 <li>
-                  {"Multi-layered Representation Learning with Edge Restructured Pooling"}<br/>
+                  {"Multi-layered Graph Representation Learning with Edge Restructured Pooling"}<br/>
                   {"Atsushi Miyamoto, Koji Fukuda, and "}
                   <strong>{"Yicheng Du"}</strong><br/>
                   {"ECML-PKDD 2019 Workshop (Graph Embedding and Mining) "}
