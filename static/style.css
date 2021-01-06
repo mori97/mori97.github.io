@@ -1,5 +1,6 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
+  min-width: 700px;
 }
 
 .main {
